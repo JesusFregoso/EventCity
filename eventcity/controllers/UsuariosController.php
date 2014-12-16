@@ -11,7 +11,9 @@ class UsuariosController{
 	public function login(){		
 		view('login');
 	}
-
+	/**
+	 * [funcion loginpost ingresas como usuario a la pagina]
+	 */
 	public function loginpost(){	
 		$datos = $_POST;
 		$correo = $datos['correo_electronico'];
@@ -24,12 +26,16 @@ class UsuariosController{
 			redirect('');
 		}
 	}
-
+	/**
+	 * [funcion logout destruye la session de un usuario al salir de la pagina]
+	 */
 	public function logout(){
 		session_destroy();
 		redirect('');
 	}
-
+	/**
+	 * [funcion publicar publicar como el usuario conectado aun no implementada]
+	 */
 	public function publicar(){
 		$publicacion = new Publicacion();
 		$publicacion->setData($_POST);

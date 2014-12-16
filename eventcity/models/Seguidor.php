@@ -1,7 +1,9 @@
 <?php
 
 require_once("BaseModel.php");
-
+/**
+ * Modelo Del seguidor
+ */
 class Seguidor extends BaseModel{
 
 	public $table = "seguidores";
@@ -10,8 +12,5 @@ class Seguidor extends BaseModel{
 		'id_siguiendo' 			=> 'required',
 		'id_usuario'						=> 'required',
 		'id_evento'             =>'required',
-	);	
-	public function prepareData($data){
-		return $data;
-	}
+	);
 }

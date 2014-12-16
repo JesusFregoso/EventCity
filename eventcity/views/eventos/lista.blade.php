@@ -70,5 +70,5 @@
                    <?php } ?>  
             </div>
         </div>   
-        </div>        
+    </div>        
 <?php include( ROOT . "/views/footer.blade.php"); ?>

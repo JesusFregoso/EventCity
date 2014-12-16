@@ -1,7 +1,9 @@
 <?php
 
 require_once("BaseModel.php");
-
+/**
+ * Modelo del registro de usuario
+ */
 class Registro extends BaseModel{
 
 	public $table = "usuarios";
@@ -13,7 +15,5 @@ class Registro extends BaseModel{
 		'contrasena'		=> 'required',
 		'correo_electronico'        => 'required',
 	);	
-	public function prepareData($data){
-		return $data;
-	}
+
 }

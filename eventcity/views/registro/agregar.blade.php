@@ -16,31 +16,29 @@
           <?php } ?>
         </div>
       <?php } ?>
-      </div> 
+  </div> 
       <div class="panel panel-default panelRegistro">
-      <div class="panel-body alineacionIzquierda">
-      <div class="tituloUnete"><h4>Unete a Event City ahora</h4></div> 
-       <?php
-                Form::open("post",getPublic()."/registro/guardar",$registro);              
-            ?>
-              <div class="components col-record">
-
-              <?php Form::field('text','nombre_completo'); ?>
-              <?php Form::field('text','correo_electronico'); ?> 
-              <?php Form::field('select-opcional','sexo',NULL,$sexos); ?>  
-              <?php Form::field('select-opcional','id_categoria_usuario',null,$categorias); ?> 
-              <?php Form::field('text','usuario'); ?> 
-              <?php Form::field('text','contrasena'); ?> 
-              </div>           
-                     <div class = "centrar">
-                        <p class="terminosLicencia">aceptas las Condiciones de Servicio y la Política de Privacidad, incluyendo el Uso de Cookies. Otros podrán encontrarte por correo electrónico o por número de teléfono cuando sea proporcionado.
-                        </p>
-                         <button type="submit" class="btn btn-warning alineacionDerecha">Registrase</button>
-                     </div>
+        <div class="panel-body alineacionIzquierda">
+          <div class="tituloUnete"><h4>Unete a Event City ahora</h4>
+          </div> 
+          <?php
+            Form::open("post",getPublic()."/registro/guardar",$registro);              
+          ?>
+          <div class="components col-record">
+             <?php Form::field('text','nombre_completo'); ?>
+            <?php Form::field('text','correo_electronico'); ?> 
+            <?php Form::field('select-opcional','sexo',NULL,$sexos); ?>  
+            <?php Form::field('select-opcional','id_categoria_usuario',null,$categorias); ?> 
+            <?php Form::field('text','usuario'); ?> 
+            <?php Form::field('text','contrasena'); ?> 
+          </div>           
+          <div class = "centrar">
+              <p class="terminosLicencia">aceptas las Condiciones de Servicio y la Política de Privacidad, incluyendo el Uso de Cookies. Otros podrán encontrarte por correo electrónico o por número de teléfono cuando sea proporcionado.
+              </p>
+              <button type="submit" class="btn btn-warning alineacionDerecha">Registrase</button>
+            </div>
             <?php Form::close(); ?>
+        </div>
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
+</div>
 <?php include( ROOT . "/views/footer.blade.php"); ?>

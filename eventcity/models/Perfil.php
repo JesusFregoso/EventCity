@@ -1,7 +1,9 @@
 <?php
 
 require_once("BaseModel.php");
-
+/**
+ * Modelo del Perfil de usuario
+ */
 class Perfil extends BaseModel{
 
 	public $table = "eventos";
@@ -17,6 +19,10 @@ class Perfil extends BaseModel{
 		'fecha_fin'  => '',
 
 	);
+	/**
+ 	* Funcion prepareData Prepara algunos datos para regresarlos de forma distinta
+ 	* @param  [array] $data [array de los usuarios]
+ 	*/
 	public function prepareData($data){
 		if(!isset($data['id_usuario'])){
 			$data['id_usuario'] = getSession('id');

@@ -1,7 +1,9 @@
 <?php
 
 require_once("BaseModel.php");
-
+/**
+ * Modelo de la Publicacion No Implementada Aun
+ */
 class Publicacion extends BaseModel{
 
 	public $table = "publicaciones";

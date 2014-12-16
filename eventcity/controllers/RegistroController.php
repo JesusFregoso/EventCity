@@ -10,7 +10,10 @@ include ROOT . "/repositories/CategoriasRepo.php";
 
 
 class RegistroController{
-
+	/**
+	 * [funcion agregar agregar los datos en un arreglo para pasar a guardarlos en la base de datos]
+	 * @return [array] [agrega el resgristo]
+	 */
 	function agregar(){
 		$sexos = ["Masculino" => "Masculino", "Femenino" => "Femenino"];
 		$registro = new Registro();
@@ -19,6 +22,9 @@ class RegistroController{
 		$categorias = $repo->lista();
 		view('registro/agregar',compact('categorias','registro','sexos'));
 	}
+	/**
+	 * [funcion guardar guarda el registro en la base de datos]
+	 */
 	function guardar(){		
 
 		$registro = new Registro();

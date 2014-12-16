@@ -1,13 +1,18 @@
 <?php
 
 require_once("BaseRepo.php");
-
+/**
+ * Repositorio de los eventos
+ */
 class EventosRepo extends BaseRepo{
 
     function getModel(){
         return new Evento();
     }    
-
+    /**
+     * Funcion de eventos
+     * @return [type] [description]
+     */
     function eventos(){
         $mysql = new DBMannager();
         $mysql->connect();

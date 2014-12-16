@@ -1,7 +1,9 @@
 <?php
 
 require_once("BaseModel.php");
-
+/**
+ * Modelo de usuario
+ */
 class Usuario extends BaseModel{
 
 	public $table = "usuarios";
@@ -14,8 +16,5 @@ class Usuario extends BaseModel{
 		'usuario'		=> '',
 		'correo_electronico'        => 'required',
 		'foto'        => 'required',
-	);	
-	public function prepareData($data){
-		return $data;
-	}
+	);
 }
