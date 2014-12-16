@@ -100,9 +100,8 @@ class EventosController{
     }
     /**
      * Funcion Dejar de Seguir un evento
-     * @param  [type] $user [description]
-     * @param  [type] $eve  [description]
-     * @return [type]       [description]
+     * @param  [int] $user [id del usuario]
+     * @param  [int] $eve  [id del evento]
      */
     public function dejarseguir($user,$eve){
 
@@ -110,7 +109,11 @@ class EventosController{
         $eventos = $repo->dejarseguir($user,$eve);
         view('eventos/lista');
     }
-
+    /**
+     * Funcion Dar Megusta
+     * @param  [int] $user [id del usuario que da me gusta]
+     * @param  [int] $eve  [id del evento al que se le dio me gusta]
+     */
     public function megusta($user,$eve){
 
         $repo = new EventosRepo();
@@ -118,8 +121,12 @@ class EventosController{
 
         redirect('eventos/lista');
     }
+    /**
+     * [Funcion Dar NomeGusta ]
+     * @param  [int] $eve  [id del evento al que se le quita el me gusta]
+     * @param  [int] $user [id del usuario que le da nomegusta al evento]
+     */
     public function nomegusta($eve,$user){
-
         $repo = new EventosRepo();
         $eventos = $repo->nomegusta($eve,$user);
         redirect('eventos/lista');

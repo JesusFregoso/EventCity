@@ -26,7 +26,10 @@ class PerfilesController{
 
 		view('perfiles/ver');
 	}
-
+    /**
+     * Funcion Modificar el perfil
+     * @return [array] [regresar el perfil ya creado para pasar a actualizarlo]
+     */
 	function modificar(){
 		$sexos = ["Masculino" => "Masculino", "Femenino" => "Femenino"];
 		$repo = new CategoriasRepo();
@@ -36,7 +39,8 @@ class PerfilesController{
         $usuario = $repo->find(getSession('id'));
         view('perfiles/ver',compact('usuario','sexos','categorias')); 
     }
-        function actualizar(){
+    
+    function actualizar(){
         $repo = new RegistrosRepo();
         $usuario = $repo->find(getSession('id'));       
         $usuario->setData($_POST);
@@ -64,7 +68,8 @@ class PerfilesController{
         $seguidos = $repo->seguidos();
         view('perfiles/muro',compact('seguidos'));
     }
-function guardar($id_siguiendo){     
+
+    function guardar($id_siguiendo){     
 
         $carrera = new Seguidor();
         $carrera->setData($_POST);
