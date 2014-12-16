@@ -1,0 +1,453 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+    font-family:'Arial';
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 0px;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
+
+
+
+
+
+/*Propiedades Generales*/
+.alineacionDerecha {
+    float: right;
+}
+.btn-inicio{
+    color: #fff;
+background-color: #691372;
+border-color: #FFFFFF;
+}
+.btn-inicio :hover{
+color: #fff;
+background-color: #691372;
+border-color: #FFFFFF;
+}
+.alineacionIzquierda{
+    float: left;
+}
+
+.menu-bar{
+    background-color: #eeefea;
+    border-color: #eeefea;
+    color : white;
+}
+/*.centrar{
+    width: 10px;
+}*/
+.wrapper {
+    background: none repeat scroll 0% 0% #FFF;
+}
+
+
+
+
+
+/*Formulario de Inicio*/
+.paneles {
+    padding:0px 0px 0px 0px;
+    margin-left: 70%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+}
+
+.paneles .panelInicio{
+    width: 335px;
+    background-color: rgba(255, 255, 255, 0.42);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px black;
+}
+
+.login .col-login {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    height: 30px;
+    margin-top: 20px;¡
+}
+
+.login .col-registro {
+    margin-top: 20px;
+    position: relative;
+}
+
+.inicio .definicion {
+    display: inline-block;
+    vertical-align: top;
+    width: 600px;
+    position: relative;
+    margin-right: 15%;
+    text-align: justify;
+    background-color: rgba(100, 0, 95, 0.13);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px black;
+}
+
+/*Formulario de Registro*/
+.panelRegistro {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.panelRegistro .tituloUnete {
+    text-align:center;
+    padding-bottom: 30px;
+}
+
+.col-record {
+    padding: 10px 0px 0px 100px;
+    width: 55%;
+}
+
+.panelRegistro .components .col-record .botonCrear {
+    font-size: 14px;
+    height: 34px;
+    padding: 6px 0px 6px 0px;
+    margin-top: 10px;
+}
+.terminosLicencia {
+    font-size: 9px;
+    text-align: justify;
+}
+
+
+
+
+
+/*Formulario de Evento*/
+.search {
+    padding: 10px 0px 0px 10px;
+    margin-left: 100px;
+    width: 20%;
+    position: absolute;
+}
+
+.head-image img{
+    height: 224px;
+    position: relative;
+    width: 100%;
+}
+
+.footer {
+    display: block;
+}
+
+.container-publicaciones {
+    margin: 10px 15% 0px 15%;
+    padding-right: 0px 0px;
+}
+
+.container-publicaciones .evento {
+    width: 56%;
+    margin-left: 29%;
+}
+
+.container-left {
+    margin-left: 20px;
+    margin-top: 100px;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.evento {
+    width: 760px;
+    margin: auto;
+    margin-left: 670px;
+    margin-top: 10px;
+}
+.alert-well{
+    color: #FFFFFF;
+background-color: rgba(255, 255, 255, 0);
+border-color: rgba(188, 232, 241, 0);
+font-size: 20px;
+text-shadow: 1px 1px 3px black;
+}
+
+.alert-inicio{
+    color: #FFFFFF;
+background-color: rgba(217, 237, 247, 0.17);
+border-color: rgba(188, 232, 241, 0);
+font-size: 20px;
+text-shadow: 1px 1px 3px black;
+}
+
+
+
+/*Formulario Registro-Evento*/
+.container-registro-evento {
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.width-text {
+    width: 20%;
+}
+
+.separador{
+    margin-top: 5%;
+}
+
+/*CALENDARIO*/
+/* input box in default state */ 
+.tcalInput {
+    background: url('style/cal.gif') 100% 50% no-repeat;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+/* additional properties for input boxe in activated state, above still applies unless in conflict */
+.tcalActive {
+    background-image: url('style/no_cal.gif');
+}
+/* container of calendar's pop-up */
+#tcal {
+    position: absolute;
+    visibility: hidden;
+    z-index: 100;
+    width: 170px;
+    background-color: white;
+    margin-top: 2px;
+    padding: 0 2px 2px 2px;
+    border: 1px solid silver;
+
+    -moz-box-shadow: 3px 3px 4px silver;
+    -webkit-box-shadow: 3px 3px 4px silver;
+    box-shadow: 3px 3px 4px silver;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='silver')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='silver');
+}
+
+/* table containing navigation and current month */
+#tcalControls {
+    border-collapse: collapse;
+    border: 0;
+    width: 100%;
+}
+#tcalControls td {
+    border-collapse: collapse;
+    border: 0;
+    padding: 0;
+    width: 16px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#tcalControls th {
+    border-collapse: collapse;
+    border: 0;
+    padding: 0;
+    line-height: 25px;
+    font-size: 10px;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+}
+#tcalPrevYear { background-image: url('style/prev_year.gif'); }
+#tcalPrevMonth { background-image: url('style/prev_mon.gif'); }
+#tcalNextMonth { background-image: url('style/next_mon.gif'); }
+#tcalNextYear { background-image: url('style/next_year.gif'); }
+
+/* table containing week days header and calendar grid */
+#tcalGrid {
+    border-collapse: collapse;
+    border: 1px solid silver;
+    width: 100%;
+}
+#tcalGrid th {
+    border: 1px solid silver;
+    border-collapse: collapse;
+    padding: 3px 0;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 10px;
+    background-color: gray;
+    color: white;
+}
+#tcalGrid td {
+    border: 0;
+    border-collapse: collapse;
+    padding: 2px 0;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    width: 14%;
+    font-size: 11px;
+    cursor: pointer;
+}       
+#tcalGrid td.tcalOtherMonth { color: silver; }
+#tcalGrid td.tcalWeekend { background-color: #CCCCCC; }
+#tcalGrid td.tcalToday { border: 1px solid red; }
+#tcalGrid td.tcalSelected { background-color: #FFB3BE; }         
+
+.inicio-fecha .col-fecha {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.col-fecha .tcal{
+    width: 60%;
+}
+
+.col-fecha .hora{
+    width: 100%;
+    margin-left: -30%;
+}
+
+/** CSS de Footer **/
+
+footer {
+    
+}
+
+
+/*** CSS de navigatio **/
+
+.menu-perfil img{
+    width: 20px;
+}
+/*** CSS de Muro Foto de Portada **/
+.perfil img{
+    position: absolute;
+    margin-top: -30%;
+    margin-left: 5%;
+}
+.nombre-perfil{
+margin-top: 45%;
+margin-left: 25%;
+}
+
+/**** CSS de Publicaciones **/
+.publicacion .imagen-perfil-muro{
+    width: 50px;
+}
+
+.publicacion .nombre-usuario{
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+
+.publicacion .fecha-publicacion{
+    font-size: 12px;
+    display: block;
+    margin-top: 7px;
+}
+
+.publicacion .comentario{
+    padding: 10px 15px;
+}
+
+.fecha{
+    padding-top: 5%;
+}
+.index{
+    background-image: url(style/index.jpg); 
+    margin-top: -4%;
+}
+.inicio .panelbienvenido{
+    background-color: #fff;
+}
+
+/*** CSS DE INICIO EVENTOS ***/
+
+.eventos-color{
+background-color: #eeefea;
+border-color:  #eeefea;
+}
